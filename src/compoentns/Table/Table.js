@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import FormHeader from "./TableHeader";
-import classes from "./table.module.scss";
+import  "./table.module.scss";
 
 const styleCss = {
   textAlign: "center",
@@ -21,9 +21,9 @@ const HeadlessTable = ({
 
   return (
     <table
-      className={`${classes.bijTable} ${
-        tableStriped && classes.tableStripedClass
-      } ${tableHover && classes.tableHoverClass} ${tableClass}`}
+      className={`bijTable ${
+        tableStriped && 'tableStripedClass'
+      } ${tableHover && 'tableHoverClass'} ${tableClass}`}
     >
       <thead>
         <tr>
@@ -46,7 +46,7 @@ const HeadlessTable = ({
             {new Array(tableConfig?.length).fill(0)?.map(() => {
               return (
                 <td>
-                  <div className={classes.skeletonBox}></div>
+                  <div className={'skeletonBox'}></div>
                 </td>
               );
             })}

@@ -1,1 +1,1 @@
-export { default } from './Table.js';
+export { default as HeadlessTable } from './Table.js';

@@ -1,6 +1,6 @@
 {
   "name": "template-web-kit",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "WebKit simplifies web development with its headless table, dynamic form, and HOC features. These built-in tools streamline projects, providing efficient data management, interactive forms, and reusable components. With WebKit, developers create robust applications more easily, enhancing productivity and delivering a seamless user experience.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,10 +14,11 @@
     "@rollup/plugin-commonjs": "^25.0.2",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@types/react": "^18.2.14",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "rollup": "^2.79.1",
-    "lodash": "^4.17.21",
-    "rollup-plugin-babel": "^4.4.0"
+    "rollup-plugin-babel": "^4.4.0",
+    "sass": "^1.50.0"
   },
   "main": "dist/my-component-library.js",
   "module": "dist/my-component-library.esm.js",
@@ -31,5 +32,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Sjstar007/web-kit/wiki"
+  },
+  "dependencies": {
+    "rollup-plugin-scss": "^4.0.0"
   }
 }

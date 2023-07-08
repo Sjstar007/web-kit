@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import classes from './form.module.scss';
+import './form.module.scss';
 import _ from 'lodash';
 import { PropTypes } from 'prop-types';
 
@@ -26,7 +26,7 @@ const RenderFieldComponent = ({
   }, [dependencies, id, states]);
 
   return (
-    <div className={classes.inputContainer}>
+    <div className={'inputContainer'}>
       <Component
         id={id}
         genericProps={genericProps}
@@ -70,7 +70,7 @@ export const Layout = ({
             );
           }
           return (
-            <div className={classes.row} key={row.join(',')}>
+            <div className={'row'} key={row.join(',')}>
               {row.map((cell, index) => {
                 if (typeof cell === 'object') {
                   return (
@@ -190,7 +190,7 @@ const Form = ({
   };
 
   return (
-    <div className={`${classes.form} ${containerClassName}`}>
+    <div className={`form ${containerClassName}`}>
       <form onSubmit={handleSubmitButton}>
         <Layout
           fields={fields}
@@ -215,4 +215,4 @@ Form.propTypes = {
   genericProps: PropTypes.object,
   initialValues: PropTypes.object.isRequired,
 };
-export { Form };
+export default Form;
